@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Jin Guo | CS Researcher</title>
+
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/font-awesome.min.css" rel="stylesheet">
+		<link href="css/maincss.css" rel="stylesheet">
+		<link href="css/cv.css" rel="stylesheet">
+
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	    	<!--[if lt IE 9]>
+	   		   	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	      		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	    	<![endif]-->
+  	</head>
+  	<body>
+  		<div class="container">
+			<nav class="navbar navbar-default">
+				<div class="container-fluid">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-responsive-collapse" aria-expanded="false">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="index.html">
+							<i class="fa fa-home"></i> &nbsp;Jin Guo
+						</a>
+					</div>
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="navbar-responsive-collapse">
+						<ul class="nav navbar-nav navbar-right">
+							<li class="active" id="projects-dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+									<i class="fa fa-wrench"></i> &nbsp;Research and Projects <span class="caret"></span>
+								</a>
+								<ul class="dropdown-menu">
+									<li><a href="ontology.html">Domain Ontology Construction</a></li>
+									<li><a href="docit.html">Intelligent Software Traceability</a></li>
+									<li role="separator" class="divider"></li>
+									<li><a href="equery.html">Support for Query Evolution</a></li>
+									<li><a href="otherProjects.html">Others Projects</a></li>
+								</ul>
+							</li>
+							<li><a href="cv.html"><i class="fa fa-file"></i> &nbsp;CV</a></li>
+							<li><a href="#"><i class="fa fa-user"></i> &nbsp;Personal</a></li>
+						</ul>
+					</div><!-- /.navbar-collapse -->
+				</div><!-- /.container-fluid -->
+			</nav>
+
+			<div class="row main-content">
+				<div class="col-md-3">
+					<div class="sidebar hidden-print hidden-xs hidden-sm">
+						<ul class="nav">
+							<li><a href="ontology.html">Domain Ontology Construction</a></li>
+							<li><a href="docit.html">Intelligent Software Traceability</a></li>
+							<li class="active"><a href="equery.html">Support for Query Evolution</a></li>
+							<li><a href="otherProjects.html">Others Projects</a></li>
+						</ul>
+					</div>
+				</div>
+
+			
+				<div class="col-xs-12 col-md-4 pull-right">
+					<div id="carousel-slides" class="carousel slide" data-ride="carousel">
+						<ol class="carousel-indicators">
+							<li data-target="#carousel-slides" data-slide-to="0" class="active"></li>
+							<li data-target="#carousel-slides" data-slide-to="1"></li>
+							<li data-target="#carousel-slides" data-slide-to="2"></li>
+						</ol>
+
+						<!-- Wrapper for slides -->
+						<div class="carousel-inner" role="listbox">
+							<div class="item active">
+								<img src="img/equery/SystemOverview.pdf" alt="EQuery System Overview.">
+								<center><span class="pplb9d-">System Overview</span></center>
+							</div>
+							<div class="item">
+								<img src="img/equery/Graph.pdf" alt="Recommended Relevant Concepts.">
+								<center><span class="pplb9d-">Recommended Relevant Concepts</span></center>
+							</div>
+							<div class="item">
+								<img src="img/equery/UseCase.pdf" alt="Interface.">
+								<center><span class="pplb9d-">Interface</span></center>	
+							</div>
+						</div>
+
+						<!-- Wrapper for popup -->
+						<div id="popupSlide"></div>
+
+						<!-- Controls -->
+						<a class="left carousel-control" href="#carousel-slides" role="button" data-slide="prev">
+							<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+							<span class="sr-only">Previous</span>
+						</a>
+						<a class="right carousel-control" href="#carousel-slides" role="button" data-slide="next">
+							<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+							<span class="sr-only">Next</span>
+						</a>
+					</div>
+					<br>
+				</div>
+				<div class="col-xs-12 col-md-5">
+					<div class="row section">
+						<div class="sectionHeader">
+							<h4>Support for Query Evolution (2013)</h4>
+						</div>
+						<div class="sectionContent">
+							<p>The state-of-art search engines have made great effort on supporting user to form their queries, such as query auto-completion, spell correction, disambiguation, etc. Because certain gap exists between user’s actual information need and the queries they form in the first time, their queries might evolve as they receive more information about the topic they concern. The techniques I mentioned above, however, might not be very helpful for supporting user’s query evolution. The main goal of this project is to support user during their query evolution, indicating them other closely connect concepts and the concrete corresponding relationship between these concepts the query they typed in. To this end, I used DBpedia, i.e., the knowledge base from Wikipedia, with natural language processing techniques to suggest such concepts and their relations. </p>
+							
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-4 pull-right">
+				</div>
+			</div>
+
+			<footer>
+				<hr>
+				<p class="text-right copyright">&copy; copyright Jin Guo | Updated March 2016
+				| Jinnzz [at] gmail [dot] com<p>
+			</footer>
+		</div>
+
+    	<script src="js/jquery.min.js"></script>
+    	<script src="js/bootstrap.min.js"></script>
+    	<script src="js/slidezoom.js"></script>
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-73284202-1', 'auto');
+		  ga('send', 'pageview');
+
+		</script>
+  	</body>
+</html>
