@@ -1,0 +1,13 @@
+.img-circle {
+  display: block;
+  max-width: 35%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  }
+
+.stu-bio {
+    text-align: justify;
+    margin-left: 20px;
+    margin-right:20px;
+}
