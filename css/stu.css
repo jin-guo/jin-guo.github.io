@@ -11,3 +11,36 @@
     margin-left: 20px;
     margin-right:20px;
 }
+
+.bb-accordion {
+  border: 1px solid #394EFF;
+  border-width: 1px 0;
+  display: block;
+  margin-bottom: 40px;
+  position: relative
+}
+
+.bb-accordion.bb-accordion-expanded:before, .bb-no-js .bb-accordion:focus:before {
+  transform: rotate(225deg);
+  -ms-transform: rotate(225deg);
+  transition-duration: 480ms
+}
+
+.bb-accordion.bb-accordion-expanded .bb-accordion-content, .bb-no-js .bb-accordion:focus .bb-accordion-content {
+  animation-name: overflowVisible;
+  animation-delay: 960ms;
+  max-height: 120em;
+  transition-delay: 240ms;
+  transition-duration: 720ms
+}
+
+.bb-accordion:not(.bb-accordion-expanded) .bb-accordion-content > * ,
+.bb-no-js .bb-accordion:not(:focus) .bb-accordion-content > * {
+    opacity: 0
+}
+
+.bb-no-js .bb-accordion:not(.bb-accordion-expanded):focus .bb-accordion-content > * {
+    opacity: 1;
+    transition-delay: 960ms;
+    transition-duration: 240ms
+}
